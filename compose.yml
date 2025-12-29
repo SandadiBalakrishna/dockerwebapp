@@ -2,7 +2,7 @@
 version: "3"
 services:
  deploy:
-  - replicas: 2
+   replicas: 2
  devopsdb:
    image: shaikmustafa/myapp:dbimage
    ports:
@@ -10,7 +10,7 @@ services:
 
  application:
   deploy:
-   - replicas: 2
+    replicas: 2
    image: shaikmustafa/myapp:appimage
    ports:
      - "1234:8080"
